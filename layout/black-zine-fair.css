@@ -109,8 +109,8 @@ body {
 }
 
 .fair-button {
-    color: var(--bg-color) !important; 
-    -webkit-text-stroke: 2px var(--bg-color); 
+    color: var(--bg-color) !important;
+    -webkit-text-stroke: 2px var(--bg-color);
     background-color: var(--text-color);
     border: 5px solid;
     border-radius: 70%;
@@ -126,7 +126,7 @@ body {
 
 .fair-button:hover {
     color: var(--text-color) !important;
-    -webkit-text-stroke: 2px var(--text-color); 
+    -webkit-text-stroke: 2px var(--text-color);
     background-color: var(--fl-red);
 }
 
@@ -145,6 +145,7 @@ h2,
 p {
     text-align: justify;
     text-justify: inter-word;
+    hyphens: manual;
     -webkit-text-stroke: 1px var(--text-color) !important;
 
 }
@@ -176,10 +177,10 @@ p a:link {
     line-height: 100%;
 }
 
-p a:visited {
+/* p a:visited {
     color: var(--bg-color);
     -webkit-text-stroke-color: var(--bg-color);
-}
+} */
 
 li a {
     color: var(--text-color);
@@ -189,6 +190,19 @@ li a {
 .big-link {
     color: var(--text-color) !important;
     -webkit-text-stroke: 0.75px var(--text-color);
+}
+
+.profile a:link,
+a:visited,
+a:active {
+    padding: 10%;
+    color: var(--body-text);
+    border: 2px solid var(--body-text);
+    background-color: var(--bg-color);
+}
+
+.profile a:hover {
+    background-color: var(--fl-red);
 }
 
 a:link,
@@ -224,7 +238,7 @@ ol {
     background-position: top;
     background-color: var(--bg-color);
     height: 0;
-    padding-top: 56.25%; 
+    padding-top: 56.25%;
     /* (img-height / img-width * container-width) */
     /* (1080 / 1920 * 100) */
 }
@@ -251,6 +265,7 @@ ol {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    margin-right: 2%;
 }
 
 .workshop-img {
@@ -293,11 +308,12 @@ ol {
     body {
         overflow-x: hidden;
         word-break: break-word;
-        hyphens: auto;
+        hyphens: manual;
+        font-size: 2em;
     }
 
     .black-zine-fair {
-        font-size: 38vw;
+        font-size: 15vw;
         line-height: 75%;
     }
 
@@ -305,12 +321,17 @@ ol {
         display: none;
     }
 
-    ul {
-        margin-left: 1.25em;
-        margin-top: 0;
-        list-style-type: disc;
+    .exhibitor ul {
+        list-style-type: none;
     }
 
-    .footer-link {
+    ul {
+        /* margin-left: 1.25em; */
+        margin-top: 0;
+        list-style-type: none;
+    }
+
+    .footer {
+        height: 20%;
     }
 }
