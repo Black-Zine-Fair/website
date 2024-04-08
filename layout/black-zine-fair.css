@@ -177,10 +177,10 @@ p a:link {
     line-height: 100%;
 }
 
-/* p a:visited {
+p a:visited {
     color: var(--bg-color);
     -webkit-text-stroke-color: var(--bg-color);
-} */
+}
 
 li a {
     color: var(--text-color);
