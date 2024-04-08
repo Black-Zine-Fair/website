@@ -166,6 +166,11 @@ a:active {
     line-height: 100%;
 }
 
+a:visited {
+    color: var(--text-color);
+    -webkit-text-stroke: 0.75px var(--text-color);
+}
+
 .rsvp-button {
     font-family: 'Futura Simplex Regular', Arial, Helvetica, sans-serif;
     font-size: var(--body-text);
@@ -177,11 +182,6 @@ a:active {
     border: 0px;
     border-radius: calc(20px + 0.5vw);
     line-height: 100%;
-}
-
-p a:visited {
-    color: var(--bg-color);
-    -webkit-text-stroke-color: var(--bg-color);
 }
 
 li a {
